@@ -11,8 +11,8 @@ private:
                    {0,  1},
                    {1,  0},
                    {0,  -1}};;
-    unsigned long m;
-    unsigned long n;
+    int m;
+    int n;
     vector<vector<bool>> visited;
 
     bool inArea(int x, int y);
