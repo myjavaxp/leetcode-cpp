@@ -16,12 +16,12 @@ void Solution0200::dfs(vector<vector<char>> &grid, int x, int y) {
 }
 
 int Solution0200::numIslands(vector<vector<char>> &grid) {
-    m = grid.size();
+    m = static_cast<int>(grid.size());
     if (m == 0) {
         return 0;
     }
-    n = grid[0].size();
-    visited = vector<vector<bool>>(m, vector<bool>(n, false));
+    n = static_cast<int>(grid[0].size());
+    visited = vector<vector<bool>>(static_cast<unsigned long>(m), vector<bool>(static_cast<unsigned long>(n), false));
     int res = 0;
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
